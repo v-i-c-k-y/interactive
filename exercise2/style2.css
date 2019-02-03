@@ -1,0 +1,16 @@
+body {font-family: 'Abel', sans-serif;
+background: yellow;}
+dd {margin-left: 0px;}
+#container {max-width: 450px;
+			text-align: center;}
+ul, li{ list-style:none;
+    	list-style-type:none;
+    	padding-left: 0;
+    display: inline}
+
+#table-of-contents {
+  position: fixed;
+  left: 460px;
+writing-mode: vertical-lr;
+text-orientation: upright;
+}
