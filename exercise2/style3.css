@@ -1,0 +1,42 @@
+/*spin animation sourced from https://css-tricks.com/lets-look-50-interesting-css-properties-values/*/
+body {font-family: 'Abel', sans-serif;
+background: black;
+font-size: 12px;}
+dd {margin-left: 0px;}
+#container {
+			text-align: center;
+		    color: white;}
+ul, li{ list-style:none;
+    	list-style-type:none;
+    	padding-left: 0;
+    display: inline}
+hr {
+    border-color: white;
+}
+#container {
+  padding: 1em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 3em;
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+#container {
+  animation: spin 5s ease;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+}
+
+#container {
+  perspective: 1000px;
+}
