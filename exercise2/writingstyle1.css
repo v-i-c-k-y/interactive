@@ -1,0 +1,10 @@
+h1, h2, h3, h4 { text-align: center }
+#response {text-align: right}
+body {font-family: 'Abel', sans-serif;
+font-size: 12px;}
+#whole {
+  padding-top: 10px;
+  padding-right: 75px;
+  padding-bottom: 10px;
+  padding-left: 75px;
+}
