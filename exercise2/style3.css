@@ -32,7 +32,7 @@ hr {
 }
 
 #container {
-  animation: spin 10s ease;
+  animation: spin 15s ease;
   animation-iteration-count: infinite;
   backface-visibility: hidden;
 }
