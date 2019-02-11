@@ -1,0 +1,20 @@
+body {background-color: coral;
+  font-family: 'Abel', sans-serif;
+color: white;}
+h2 {writing-mode: vertical-lr;
+text-orientation: upright
+height: 100px;}
+h1 {text-align: center}
+.main {
+  position: relative;
+  width: 600px;
+  margin: 0 auto; 
+}
+.listing {
+	margin-left:100px;
+}
+.title {
+	position: absolute;
+  left: 0px;
+  width: 20px;
+}
