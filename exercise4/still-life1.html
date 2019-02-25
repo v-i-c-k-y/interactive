@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: gold;
+	}
+
+	/* this is where you can style the objects in your still life */
+
+.book.cover {
+      width: 150px;
+      height: 80px;
+      transform: skew(-60deg);
+      background: #DB4747;
+	  z-index: 3;
+	  position: absolute;
+	  top: 160px;
+	  left: 600px;
+	  z-index: 5;
+    }
+.book.pages {
+      width: 150px;
+      height: 80px;
+      transform: skew(-60deg);
+      background: white;
+	  z-index: 3;
+	  position: absolute;
+	  top: 165px;
+	  left: 600px;
+	  z-index: 4;
+    }
+    .book.end {
+      width: 150px;
+      height: 80px;
+      transform: skew(-60deg);
+      background: #DB4747;
+	  z-index: 3;
+	  position: absolute;
+	  top: 170px;
+	  left: 600px;
+	  z-index: 3;
+    }
+
+	#egg {
+		width: 60px;
+		height: 30px;
+		background: black;
+		border-radius: 50%;
+		position: absolute;
+		top: 160px;
+		left: 600px;
+		z-index: 5;
+	}
+
+	.clementine {
+		width: 60px;
+		height: 60px;
+		background: orange;
+		border-radius: 45%;
+		position: absolute;
+		z-index: 4;
+	}
+.clementine.one {
+	left:400px;
+	top:60px;
+}
+.clementine.two {
+	left:370px;
+	top:100px;
+}
+.clementine.three {
+	left:350px;
+	top:90px;
+}
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+    	<div id="circle"></div>
+        <div id="egg"></div>
+        <div class="clementine one"></div>
+        <div class="clementine two"></div>
+        <div class="clementine three"></div>
+        <div class="book cover"></div>
+        <div class="book pages"></div>
+        <div class="book end"></div>
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+
+</body>
+
+</html>
