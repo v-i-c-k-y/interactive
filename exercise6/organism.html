@@ -56,6 +56,21 @@
     }
 
 	/* this is where you can style the objects in your still life */
+.glass {
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: 0.4;
+	z-index: 15;
+}
+
+.glass-pane {
+width: 100%;
+    height: 100%;
+      border:0.5px solid black;
+      display: block;
+      z-index: 14;
+}
 
 .book-cover {
       width: 150px;
@@ -70,14 +85,13 @@
     .book-case {
 	width: 500px;
     height: 500px;
-      animation: colorchange 1s infinite;
-      -webkit-animation: colorchange 1s infinite;
       position: absolute;
     top: 43px;
     left: -86px;
-      opacity: 0.2;
-      border:1px solid black;
+      border:0.25px solid black;
       z-index: 13;
+      display: grid;
+    grid-template-columns: repeat(2, 250px);
     }
 .book-pages {
       width: 150px;
@@ -248,10 +262,9 @@ color: white;}
 .break {
     margin: 0;
     position: absolute;
-    top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
 }
 
 .save {    
@@ -269,6 +282,7 @@ color: white;}
 <body>
 
     <div class="canvas">
+    	<h1 class=break> BREAK THE GLASS </h1>
     	<p class=save> free the bookworm! </p>
         <div id="egg"></div>
         <div class="eye one"></div>
@@ -284,19 +298,32 @@ color: white;}
         <div class="book-end"></div>
         <div class="book-shelf"></div>
         <div class="book-spine"></div>
-        <div class="book-case"></div>
-        <div class="book-case-shape">
-		<h1 class=break> BREAK THE GLASS </h1>
+        <div class="book-case">
+        <div class="glass-pane one">
+        	
+        	<div class="glass"></div>
+        </div>
+        <div class="glass-pane two">
+        	<div class="glass"></div>
+        </div>
+        <div class="glass-pane three">
+        	<div class="glass"></div>
+        </div>
+        <div class="glass-pane four">
+        	<div class="glass"></div>
+        </div>
+
         </div>
        
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	 	<script type="text/javascript">
 
 
-$('.book-case').click(function() {
+$('.glass-pane.one').click(function() {
 
-	$('.book-case').css('opacity', '0.0');
+	$('.glass-pane.one').css('opacity', '0.0');
 	$('.smile').css('opacity', '1.0');
+	$('.book-case-shape').css('opacity', '0.0');
 	alert('thank u so much');
   // do something after clicking an element
 });
